@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* background: #fff; */
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+/* background image */
+.main {
+  background-image: url("./images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* logo */
+
+.svg-nfLogo {
+  fill: #e50914;
+  width: 900px;
+}
+/* navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 700px;
+  padding-top: 20px;
+}
+/* main  */
+.main-text {
+  color: #fff;
+  text-align: center;
+  padding: 190px;
+
+  /* position: absolute; */
+}
+.main-form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.nav-logo {
+  /* background-color: #fff; */
+  width: 150px;
+  margin-left: 200px;
+}
+/* faq css */
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  border: none;
+  padding-bottom: 20px;
+  background-color: #202020;
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 10px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.space {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq .faq-group .faq-group-header i {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+  display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+
+.faq ul.faq-menu {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+input {
+  height: 70px;
+  width: 90%;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  /* padding: 0 90px; */
+  font-size: larger;
+}
+::placeholder {
+  color: #fff;
+  padding-left: 7px;
+}
+/*   */
+.border {
+  border-top: 15px solid #202020;
+  /* border-bottom: 15px solid #202020; */
+}
+.enjoyTv-main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 150px;
+  align-items: center;
+}
+/* footer */
+.footer-container li {
+  list-style: none;
+  /* color: #fff; */
+}
+.footer-container li a {
+  color: #ddd;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: center; */
+  padding: 50px 0;
+}
+
+.container-sm {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+.large-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #e50914;
+  color: #fff;
+  font-weight: 700;
+  font-size: x-large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: #e50914;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 900;
+  margin: 40px 0 5px 0;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .navbar {
+    gap: 30px;
+  }
+  .nav-logo {
+    margin-left: 50px;
+  }
+  .main-text {
+    padding: 50px;
+  }
+  .main-form-container {
+    grid-template-columns: 1fr;
+  }
+
+  input {
+    width: 80%;
+    height: 50px;
+  }
+  .large-btn {
+    padding: 13px 4px;
+    font-weight: 500;
+    font-size: small;
+    width: 60%;
+    margin: auto;
+  }
+
+  .enjoyTv-main-container {
+    grid-template-columns: 1fr;
+    padding: 10px 50px;
+  }
+  .enjoy-img {
+    width: 100%;
+  }
+
+  .footer-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+   
+ 
+
+  /* Text */
+  .text-xl {
+    font-size: 1rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+}
+/* signIn css */
+.sigIn-body {
+  background-image: url("./images/SignIn-Image.jpg");
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sigIn-body .nav-logo {
+  margin-top: 20px;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #fff;
+}
+/* .form-container  */
+.form {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 40%;
+  margin: 50px auto;
+  padding: 100px 50px;
+  border-radius: 5px;
+}
+.form input {
+  border: none;
+  background-color: #202020;
+
+  margin-bottom: 10px;
+}
+.form-container ::placeholder {
+  color: #686161;
+}
+.form-container .btn {
+  padding: 20px 175px;
+  margin: 9px 0;
+}
+input[type="checkbox"] {
+  width: 20px;
+  top: 0;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.remember-me {
+  display: flex;
+  flex-direction: row;
+}
+.remember-me label {
+  margin-top: 25px;
+}
+/* form text */
+.form-text {
+  color: #686161;
+}
+.bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* color: #575151; */
+}
+.bg a {
+  color: #686161 !important;
+}
